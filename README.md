@@ -1,59 +1,31 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## 🧪 Pengujian Kualitas Aplikasi (Quality Assurance) - Project 6
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Berikut adalah hasil pengujian fitur **KitaKas** berdasarkan aspek kualitas yang telah ditentukan pada desain Daily Project 6.
 
-## About Laravel
+### 1. Tabel Pengujian Fungsional (Black Box Testing)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+| ID | Fitur | Skenario Pengujian | Hasil yang Diharapkan | Status |
+|:---|:---|:---|:---|:---:|
+| **TF-01** | **Autentikasi Gender** | Login menggunakan pilihan Gender & Password (tanpa email). | Masuk ke dashboard dengan tema warna sesuai gender (Pink/Biru). | ✅ Pass |
+| **TF-02** | **Kalender Keuangan** | Melihat ringkasan harian pada halaman kalender. | Indikator nominal transaksi muncul tepat pada tanggal terkait. | ✅ Pass |
+| **TF-03** | **Financial Goals** | Membuat target tabungan baru bersama pasangan. | Target tersimpan dan progress bar muncul di halaman tujuan. | ✅ Pass |
+| **TF-04** | **Weekly Chart** | Melihat visualisasi tren pengeluaran mingguan di Dashboard. | Grafik batang (Chart.js) muncul secara dinamis sesuai data. | ✅ Pass |
+| **TF-05** | **Split Bill Otomatis** | Menggunakan opsi bagi rata (50:50) saat mencatat transaksi. | Nominal terbagi otomatis ke saldo pribadi dan bersama. | ✅ Pass |
+| **TF-06** | **Komentar Transaksi** | Menambahkan catatan tambahan pada tiap input transaksi. | Komentar tersimpan dan dapat dilihat pada riwayat transaksi. | ✅ Pass |
+| **TF-07** | **Catat Transaksi** | Menginput data pemasukan dan pengeluaran ke database. | Data berhasil tersimpan dan mengupdate saldo sistem secara real-time. | ✅ Pass |
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 2. Tabel Evaluasi Kualitas (ISO 25010)
 
-## Learning Laravel
+| Aspek Kualitas | Kriteria Keberhasilan | Hasil Pengujian | Status |
+|:---|:---|:---|:---:|
+| **Functional Suitability** | Menjalankan seluruh fitur utama (TF-01 sampai TF-07). | Fitur inti berhasil diimplementasikan 100% sesuai Use Case. | ✅ Pass |
+| **Usability** | Kemudahan antarmuka bagi pengguna (Rizky & Dinda). | Desain responsif, warna tematik, dan navigasi sangat intuitif. | ✅ Pass |
+| **Maintainability** | Struktur kode mudah dikelola dan dikembangkan. | Menggunakan arsitektur MVC Laravel yang modular dan rapi. | ✅ Pass |
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 📝 Catatan Pengembangan (Keterbatasan Sistem)
+> **Mengenai Extension AI pada Fitur 7:**
+> Berdasarkan desain awal, Fitur 7 (Catat Transaksi) direncanakan memiliki ekstensi berupa deteksi kategori otomatis berbasis AI. Namun, pada rilis Project 6 kali ini, **ekstensi AI tersebut ditiadakan** dikarenakan kompleksitas integrasi library *Natural Language Processing* (NLP) yang membutuhkan sumber daya server lebih tinggi. Pengembangan difokuskan sepenuhnya pada stabilitas fitur utama seperti **Kalender Keuangan** dan **Split Bill** agar memberikan akurasi data yang maksimal bagi pengguna.
