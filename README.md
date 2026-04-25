@@ -1,6 +1,7 @@
-## 🧪 Pengujian Kualitas Aplikasi (Quality Assurance) - Project 6
+Berikut adalah hasil pengujian fitur **KitaKas** berdasarkan aspek kualitas yang telah ditentukan pada Daily Project 6.
 
-Berikut adalah hasil pengujian fitur **KitaKas** berdasarkan aspek kualitas yang telah ditentukan pada desain Daily Project 6.
+## Link link publish web: https://kitakas.infinityfree.me/
+## Link GitHub: https://github.com/mecaaww/KitaKas
 
 ### 1. Tabel Pengujian Fungsional (Black Box Testing)
 
@@ -21,7 +22,7 @@ Berikut adalah hasil pengujian fitur **KitaKas** berdasarkan aspek kualitas yang
 | Aspek Kualitas | Kriteria Keberhasilan | Hasil Pengujian | Status |
 |:---|:---|:---|:---:|
 | **Functional Suitability** | Menjalankan seluruh fitur utama (TF-01 sampai TF-07). | Fitur inti berhasil diimplementasikan 100% sesuai Use Case. | ✅ Pass |
-| **Usability** | Kemudahan antarmuka bagi pengguna (Rizky & Dinda). | Desain responsif, warna tematik, dan navigasi sangat intuitif. | ✅ Pass |
+| **Usability** | Kemudahan antarmuka bagi pengguna. | Desain responsif, warna tematik, dan navigasi sangat intuitif. | ✅ Pass |
 | **Maintainability** | Struktur kode mudah dikelola dan dikembangkan. | Menggunakan arsitektur MVC Laravel yang modular dan rapi. | ✅ Pass |
 
 ---
