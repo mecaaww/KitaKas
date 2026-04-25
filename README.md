@@ -1,6 +1,6 @@
 Berikut adalah hasil pengujian fitur **KitaKas** berdasarkan aspek kualitas yang telah ditentukan pada Daily Project 6.
 
-## Link link publish web: https://kitakas.infinityfree.me/
+## Link publish web: https://kitakas.infinityfree.me/
     -- Password untuk Login = password123
 ## Link GitHub: https://github.com/mecaaww/KitaKas
 
